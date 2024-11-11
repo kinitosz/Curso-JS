@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Digite seu país de origem</p>
+    <input type="text" name="nac" id="nacionalidade">
+    <input type="button" value="Preencher" onclick="conferir()">
+    <p id="res"></p>
+    
+    
+    <script>
+        function conferir() {
+            var nac = document.getElementById('nacionalidade')
+            var nacionalidade = String(nac.value)
+            var res = document.querySelector('p#res')
+
+            if(nacionalidade == "Brasil") {
+                res.innerHTML = `Você é de casa pai, seja bem-vindo véi`
+            } else {
+                res.innerHTML = `Seja bem-vindo estrangeiro, espero que se sinta em casa`
+            }
+        }
+    </script>
+</body>
+</html>

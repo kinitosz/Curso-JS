@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Limite de Velocidade</h1>
+    <p>Digite a sua velocidade atual</p>
+    <input type="number" name="Velocidade" id="vel" placeholder="Velocidade Atual">
+    <input type="button" value="Conferir" onclick="conferir()">
+    <div id="res">
+        <p id="multa"></p>
+    </div>
+
+    <script>
+
+        function conferir(){
+            var vel = document.getElementById('vel')
+            var res = document.getElementById('res')
+            var multa = document.getElementById('res')
+            var a = document.getElementById('a')
+            var veln = Number(vel.value)
+            if(veln > 60) {
+                multa.innerHTML = 'Você ultrapassou o limite de velocidade e será <strong>multado</strong>'
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
