@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.countainer{
+    background-color: rgb(255, 252, 243);
+    justify-items: center;
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+h2{
+    padding-top: 20px;
+    font-weight: lighter;
+}
+
+img{
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+body > p {
+    color: white;
+    font-weight: bold
+}
