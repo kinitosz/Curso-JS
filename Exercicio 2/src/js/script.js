@@ -17,51 +17,53 @@ function validar(){
         var genero = ''
         if(sex[0].checked){
             genero = 'Homem'
+            if(idade < 6){
+                img.src = 'src/image/bebemenino.jpg'
+                txt.innerHTML = `Você é um bebê de ${idade} anos de idade!`
+    
+            }else if(idade <= 12){
+                img.src = 'src/image/criancamenino.jpg'
+                txt.innerHTML = `Você é uma criança de ${idade} anos de idade!`
+        
+            }else if(idade <= 18){
+                img.src = 'src/image/menino.jpg'
+                txt.innerHTML = `Você é um adolescente de ${idade} anos de idade!`
+        
+            }else if(idade <= 60){
+                img.src = 'src/image/adulto.jpg'
+                txt.innerHTML = `Você é um homem de ${idade} anos de idade!`
+        
+            }else{
+                img.src = 'src/image/idoso.jpg'
+                txt.innerHTML = `Você é um senhor de ${idade} anos de idade!`
+        
+            }
         } else if(sex[1].checked){
             genero = 'Mulher'
+            if (idade < 6){
+                img.src = 'src/image/bebemenina.jpg'
+                txt.innerHTML = `Você é uma bebê de ${idade} anos de idade!`
+    
+            }else if(idade <= 12){
+                img.src = 'src/image/criancamenina.jpg'
+                txt.innerHTML = `Você é uma criança de ${idade} anos de idade!`
+        
+            }else if(idade <= 18){
+                img.src = 'src/image/menina.jpg'
+                txt.innerHTML = `Você é uma adolescente de ${idade} anos de idade!`
+        
+            }else if(idade <= 60){
+                img.src = 'src/image/adulta.jpg'
+                txt.innerHTML = `Você é uma mulher de ${idade} anos de idade!`
+        
+            }else{
+                img.src = 'src/image/idosa.jpg'
+                txt.innerHTML = `Você é uma senhora de ${idade} anos de idade!`
+        
+            }
         }
 
-        if (idade < 6 && genero == 'Mulher'){
-            img.src = 'src/image/bebemenina.jpg'
-            txt.innerHTML = `Você é uma bebê de ${idade} anos de idade!`
-
-        }else if(idade < 6 && genero == 'Homem'){
-            img.src = 'src/image/bebemenino.jpg'
-            txt.innerHTML = `Você é um bebê de ${idade} anos de idade!`
-
-        }else if(idade >= 7 && idade <= 12 && genero == 'Mulher'){
-            img.src = 'src/image/criancamenina.jpg'
-            txt.innerHTML = `Você é uma criança de ${idade} anos de idade!`
-    
-        }else if(idade >= 7 && idade <= 12 && genero == 'Homem'){
-            img.src = 'src/image/criancamenino.jpg'
-            txt.innerHTML = `Você é uma criança de ${idade} anos de idade!`
-    
-        }else if(idade > 12 && idade <= 18 && genero == 'Mulher'){
-            img.src = 'src/image/menina.jpg'
-            txt.innerHTML = `Você é uma adolescente de ${idade} anos de idade!`
-    
-        }else if(idade > 12 && idade <= 18 && genero == 'Homem'){
-            img.src = 'src/image/menino.jpg'
-            txt.innerHTML = `Você é um adolescente de ${idade} anos de idade!`
-    
-        }else if(idade > 18 && idade <= 60 && genero == 'Mulher'){
-            img.src = 'src/image/adulta.jpg'
-            txt.innerHTML = `Você é uma mulher de ${idade} anos de idade!`
-    
-        }else if(idade > 18 && idade <= 60 && genero == 'Homem'){
-            img.src = 'src/image/adulto.jpg'
-            txt.innerHTML = `Você é um homem de ${idade} anos de idade!`
-    
-        }else if(idade > 60 && genero == 'Mulher'){
-            img.src = 'src/image/idosa.jpg'
-            txt.innerHTML = `Você é uma senhora de ${idade} anos de idade!`
-    
-        }else if(idade > 60 && genero == 'Homem'){
-            img.src = 'src/image/idoso.jpg'
-            txt.innerHTML = `Você é um senhor de ${idade} anos de idade!`
-    
-        }
+        
 
         
         imgBox.removeAttribute('style', 'display: none')
