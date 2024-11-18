@@ -30,6 +30,7 @@ div{
 #ano > input{
     height: 15px;
     margin-left: 10px;
+    
 }
 
 #sexSec{
@@ -37,11 +38,12 @@ div{
     flex-direction: row;
     align-items: center;
     margin-left: 40px;
+    align-content: center;
 }
 
 #sexSec > input{
     height: 15px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 #valid{
