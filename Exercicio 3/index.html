@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section class="container">
+        <div id="inp">
+            <p><label for="inicio">Inicio: </label><input type="number" name="inicio" id="inc"></p>
+            <p><label for="fim">Fim: </label><input type="number" name="fim" id="fim"></p>
+            <p><label for="passos">Passos: </label><input type="number" name="passos" id="pas"></p>
+            <input type="button" value="Contar" id="btn" onclick="contar()">
+        </div>
+        <div id="box-res">
+            <p id="res">Preparando a contagem...</p>
+        </div>
+    </section>
+    <footer>
+        <p>@kinitosz</p>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
