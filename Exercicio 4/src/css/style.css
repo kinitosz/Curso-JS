@@ -10,12 +10,19 @@ h1{
 
 .countainer{
     background-color: rgb(255, 252, 243);
-    justify-items: center;
     width: 600px;
-    height: 400px;
+    min-height: 100px;
     border-radius: 30px;
     box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    padding: 20px 30px;
 }
+
+#box-tab{
+    margin-top: 60px;
+    text-align: center;
+}
+
+
 
 h2{
     padding-top: 20px;
