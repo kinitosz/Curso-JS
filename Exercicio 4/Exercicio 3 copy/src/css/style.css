@@ -8,36 +8,13 @@ h1{
     color: white;
 }
 
-.container{
+.countainer{
     background-color: rgb(255, 252, 243);
+    justify-items: center;
     width: 600px;
-    min-height: 100px;
+    height: 400px;
     border-radius: 30px;
     box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
-}
-
-#inp{
-    padding: 40px 0 0 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#inp p{
-    margin: 0;
-}
-
-#inp input{
-    width: 200px;
-}
-
-#inp #btn{
-    width: 80px;
-}
-
-#box-res{
-    padding: 0 30px 20px 30px;
-    margin-top: 40px;
 }
 
 h2{
